@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.znl.day.mapper.UserMapper">
+    <select id="selUserByName" resultType="com.znl.day.bean.DayUser">
+        select id, username, password
+        from DayUser AS ur
+        where ur.username = #{username}
+    </select>
+</mapper>
