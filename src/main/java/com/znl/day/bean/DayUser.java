@@ -25,20 +25,6 @@ public class DayUser implements Serializable {
         this.password = password;
     }
 
-    public static void main(String[] args) {
-        String o = "1";
-        String p = "1";
-        System.out.println(o == p);           // true
-
-        Integer i11 = 1;
-        Integer i22 = 1;
-        System.out.println(i11 == i22);       // true
-
-        Integer i1 = 128;
-        Integer i2 = 128;
-        System.out.println(i1 == i2);         // false
-    }
-
     public String getUsername() {
         return username;
     }
