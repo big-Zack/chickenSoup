@@ -19,6 +19,6 @@ public class UserController {
     @RequestMapping("")
     public String login(Model model) {
         model.addAttribute("good_good_study", "假期定了个Plan，半个暑假结束了只完成了P，因为lan。");
-        return "html/dayLogin";
+        return "html/index.html";
     }
 }
